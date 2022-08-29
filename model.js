@@ -1,8 +1,9 @@
 var  ta= document.getElementById('tainput');
-var salary= document.getElementById('salary')-ta;
+var  others= document.getElementById('othersinput');
+var salary= document.getElementById('salary')-ta-others;
 var  lwf= document.getElementById('lwfinput');
 var  adv= document.getElementById('advinput');
-var  others= document.getElementById('othersinput');
+
 var  tds= document.getElementById('tdsinput');
 salary=parseInt(salary);
 var sal={
@@ -29,8 +30,11 @@ esi(salary)
 //     },
  
    pf(salary)
-     {
-         return Math.round(sal.basicsalary(salary)*0.12);
+     {if (document.getElementById('salary').value< 15000) {
+        return 0;
+     } else {
+        return Math.round(sal.basicsalary(salary)*0.12);
+     }
    },
    t1(salary, ta, others){return sal.basicsalary(salary)+sal.hra(salary)+sal.da(salary)+ parseInt(ta)+parseInt(others);
 

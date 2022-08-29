@@ -29,21 +29,21 @@
          SALARY CALCULATOR
         </h1></div>
         <div class="row"><div class="col">
-            <h1 class="display-4 text-center fw-bold my-auto"><label> SALARY : </label> <input class="mx-2 col-7 fs-xs-6" id="salary" type="text"  placeholder="ENTER SALARY"><br></h1>
+            <h1 class="display-4 text-center fw-bold my-auto"><label> SALARY : </label> <input class="mx-2 col-7 fs-xs-6" id="salary" type="number"  placeholder="ENTER SALARY"><br></h1>
                 
                 
                 
                 <div  class="fw-bold text-center" style="background-color: #413F42;">
                     <div class="row">
-                        <div class="col mx-2 my-2"><label> TA : </label> <input  id="tainput" type="text"  placeholder="ENTER TA" value=1200></div>
-                        <div class="col mx-2 my-2"><label> LWF : </label> <input  id="lwfinput" type="text"  placeholder="ENTER LWF" value=0></div>
-                        <div class="col mx-2 my-2"><label> TDS : </label> <input  id="tdsinput" type="text"  placeholder="ENTER TDS" value=0></div> </div>
+                        <div class="col mx-2 my-2"><label> TA : </label> <input  id="tainput" type="number"  placeholder="ENTER TA" value=1200 onchange="compute()"></div>
+                        <div class="col mx-2 my-2"><label> LWF : </label> <input  id="lwfinput" type="number"  placeholder="ENTER LWF" value=0 onchange="compute()"></div>
+                        <div class="col mx-2 my-2"><label> TDS : </label> <input  id="tdsinput" type="number"  placeholder="ENTER TDS" value=0 onchange="compute()"></div> </div>
                         <div class="row mt-sm-4">
-                        <div class="col mx-2 my-2"><label> Advance : </label> <input  id="advinput" type="text"  placeholder="ENTER ADVANCE" value=0></div>
-                        <div class="col mx-2 my-2"><label> others : </label> <input  id="othersinput" type="text"  placeholder="ENTER OTHERS" value=0></div>
+                        <div class="col mx-2 my-2"><label> Advance : </label> <input  id="advinput" type="number"  placeholder="ENTER ADVANCE" value=0 onchange="compute()"></div>
+                        <div class="col mx-2 my-2"><label> others : </label> <input  id="othersinput" type="number"  placeholder="ENTER OTHERS" value=0 onchange="compute()"></div>
                     </div>
                    
-                    <button  class=" but btn btn-outline-danger mt-2"  onclick=compute()>compute</button>
+                    <button  class=" but btn btn-outline-secondary mt-2"  onclick=compute()>compute</button>
                     <h2 class="display-6 fw-bold" style="background-color: black;"><span id="allow"></span></h2>
                     <div class="fw-bolder fs-3 text-center" >
                     <p><span id="bs"></span></p>

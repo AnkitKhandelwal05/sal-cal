@@ -1,0 +1,18 @@
+p{
+    background-color: #CFD2CF;
+}
+
+  .but{
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 15px;
+    font-family: Arial;
+    color: grey;
+    font-size: 40px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  @media screen and (max-width: 485px){
+    .in {width: auto;}
+   }
